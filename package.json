@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "./build_rf24libs.sh",
-    "install": "node-gyp rebuild",
+    "install": "node-gyp rebuild --target=3.1.13 --arch=arm --dist-url=https://www.electronjs.org/headers",
     "postinstall": "rm -rf rf24libs"
   },
   "repository": {
